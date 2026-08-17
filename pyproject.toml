@@ -1,0 +1,29 @@
+[project]
+name = "safeguard"
+version = "0.1.0"
+description = "Real-time monitoring of microphone and camera usage by applications on Windows"
+readme = "README.md"
+authors = [
+    { name = "zombiegirlcz", email = "zombiegirlcz@gmail.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "psutil>=6.0.0; sys_platform == 'win32'",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[project.scripts]
+safeguard = "safeguard.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
