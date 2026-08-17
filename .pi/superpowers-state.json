@@ -1,14 +1,14 @@
 {
   "workflow": {
     "phases": {
-      "brainstorm": "pending",
-      "plan": "pending",
-      "execute": "pending",
+      "brainstorm": "skipped",
+      "plan": "skipped",
+      "execute": "skipped",
       "verify": "complete",
-      "review": "pending",
+      "review": "active",
       "finish": "pending"
     },
-    "currentPhase": "verify",
+    "currentPhase": "review",
     "artifacts": {
       "brainstorm": null,
       "plan": null,
@@ -21,7 +21,7 @@
       "brainstorm": false,
       "plan": false,
       "execute": false,
-      "verify": false,
+      "verify": true,
       "review": false,
       "finish": false
     }
@@ -42,7 +42,7 @@
   },
   "debug": {
     "active": false,
-    "investigated": false,
+    "investigated": true,
     "fixAttempts": 0
   },
   "verification": {
